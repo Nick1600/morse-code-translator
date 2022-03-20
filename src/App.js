@@ -1,5 +1,6 @@
 import React from 'react';
 import './app.css';
+import Input from './components/input/Input';
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
                 <p id='description'>
                     Enter text and see it translated into Morse Code!
                 </p>
+                <Input />
             </main>
         </body>
     )
