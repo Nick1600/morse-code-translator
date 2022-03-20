@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './app.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <body>
+            <header>
+                <h1 id='heading'>
+                    Morse Code Translator
+                </h1>
+            </header>
+            <main>
+                <p id='description'>
+                    Enter text and see it translated into Morse Code!
+                </p>
+            </main>
+        </body>
+    )
 }
 
-export default App;
+export default App
