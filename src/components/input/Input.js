@@ -1,14 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './input.css';
+import Translated from '../translated/Translated';
+
 
 function Input() {
+    const [inputValue, setInputValue] = useState('');
+
+    function handleChange(event) {
+        setInputValue(event.target.value);
+    }
+
     return(
         <section id='input'>
             <form action="">
-                <label htmlFor="input-text">Text input</label>
-                <input type="text" name='input-text' id='input-text' />
-                <input type="submit" value="Translate" id="translate-button" />
+                <input type="text" name='input-text' id='input-text' onChange={handleChange} />
             </form>
+            <Translated input={inputValue} />
         </section>
     )
 }
