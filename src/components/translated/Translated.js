@@ -6,8 +6,8 @@ function Translated(props) {
     const morseMessage = Translator(props.input);
     
     return(
-        <section>
-            <p>
+        <section id='morse-container'>
+            <p id='morse-message'>
                 {morseMessage}
             </p>
         </section>

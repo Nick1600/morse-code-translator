@@ -60,6 +60,8 @@ function Translator(input) {
             morseMessage.push(morseIndex.y);
         } else if (inputArr[i] === 'z') {
             morseMessage.push(morseIndex.z);
+        } else if (inputArr[i] === ' ') {
+            morseMessage.push(morseIndex.space)
         } else if (inputArr[i] === '1') {
             morseMessage.push(morseIndex.one);
         } else if (inputArr[i] === '2') {

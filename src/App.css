@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Pacifico&display=swap');
+
+h1 {
+    font-family: 'Pacifico', cursive;
+}
+p {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+#heading {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+#description {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 3rem;
+}

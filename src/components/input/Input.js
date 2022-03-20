@@ -12,8 +12,8 @@ function Input() {
 
     return(
         <section id='input'>
-            <form action="">
-                <input type="text" name='input-text' id='input-text' onChange={handleChange} />
+            <form action="" id='input-form'>
+                <textarea type="text" name='input-text' id='input-text' onChange={handleChange} />
             </form>
             <Translated input={inputValue} />
         </section>
